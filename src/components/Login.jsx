@@ -1,6 +1,6 @@
 import React from 'react';
 import { signInWithGoogle } from '../firebase/firebaseUtils';
-import './Login.css'; // Asume que tienes un archivo de estilos CSS
+import './Login.css';
 
 export const Login = ({ onSignIn }) => {
   const handleGoogleSignIn = async () => {
@@ -14,11 +14,13 @@ export const Login = ({ onSignIn }) => {
 
   return (
     <div className="login-container">
-      <img src="pokedex-image.png" alt="" className="pokedex-image"/>
-      <p className="welcome-message"></p>
+      <div className="login-header">
+        <img src="pokedex-image.png" alt="" className="pokedex-image" />
+        <p className="welcome-message">¡Bienvenido a la Pokedex!</p>
+      </div>
       <button className="google-sign-in" onClick={handleGoogleSignIn}>
-        Inicia Sesión 
-</button>
+        Iniciar Sesión con Google
+      </button>
     </div>
   );
 };
