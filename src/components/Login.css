@@ -1,0 +1,41 @@
+  
+  .login-container {
+    display: flex; /* Utiliza flexbox */
+    flex-direction: column; /* Apila los elementos en una columna */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    height: 900vh; /* Altura completa de la ventana */
+    background-color: red; /* Fondo rojo */
+  }
+  
+  .welcome-message {
+    margin-bottom: 5px; /* Espacio entre el mensaje y el botón */
+    color: black; /* Color de texto */
+    font-size: 1.5em; /* Tamaño de la fuente */
+    text-align: center; /* Asegura que el texto esté centrado */
+  }
+  
+  .google-sign-in {
+    width: 200px; /* Establece una anchura fija */
+  height: 200px; /* Establece una altura igual a la anchura para formar un círculo */
+  padding: 0; /* Elimina el padding para mantener la forma de círculo */
+  line-height: 20px; /* Centra el texto verticalmente */
+  font-size: 1em; /* Tamaño de la fuente del botón */
+  background-color: green; /* Color de fondo inicial */
+  color: rgb(3, 3, 3); /* Color de texto para contraste */
+  border: none; /* Sin bordes */
+  border-radius: 50%; /* Esto hará que el botón sea completamente redondo */
+  cursor: pointer; /* Cursor tipo pointer al pasar el mouse sobre el botón */
+  text-align: center; /* Asegura que el texto esté centrado horizontalmente */
+  animation: blink-animation 1s infinite; /* Animación de parpadeo */
+  display: flex; /* Utiliza flexbox para centrar el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido con flexbox */
+  align-items: center; 
+  }
+  
+  /* Definición de la animación para el botón */
+  @keyframes blink-animation {
+    0%, 100% { background-color: green; }
+    10% { background-color: darkgreen; }
+  }
+  
